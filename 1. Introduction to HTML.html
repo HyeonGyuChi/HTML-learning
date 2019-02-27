@@ -1,19 +1,62 @@
 ﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>1. Introduction to HTML by HyeonGyu</title>
+  <meta charset="utf-8">
 </head>
+
 <body>
 <h1>Introduction to HTML</h1>
+</body>
+
 <ol>
-  <li>HTML이란?</li>
-  <li>기본문법</li>
-  <li>하이퍼텍스트와 속성</li>  
-  <li>Review</li>
+  <h2><li>HTML이란?</li></h2>
+    <p>하이퍼텍스트를 가장 중요한 특징으로 하는 마크업형식을 가진 컴퓨터 프로그래밍 언어</p>
+
+  <h2><li>HTML기본문법 및 구조</li></h2>
+    <ul>
+      <h3><li>TAG</li></h3>
+        <img src="html anatomy.PNG" alt="HTML Anatomy">
+        <br>HTML의 기본구조는 content(raw text)를 시작태그와 닫히는태그로 감싸여져 있다.
+        <br><em>※ 몇몇 태그는 닫히는태그가 없다 =
+        <a href="https://discuss.codecademy.com/t/why-are-some-tags-self-closing-but-others-are-not/300323" target="_blank"><strong>Self-Closing</a> ex) img br 등</strong></em>
+      <h3><li>하이퍼텍스트와 Attributes(속성)</li></h2>
+        <div id = "HyperText">
+        HTML의 가장큰 특징 →
+        <strong><a href = "https://namu.wiki/w/%ED%95%98%EC%9D%B4%ED%8D%BC%ED%85%8D%EC%8A%A4%ED%8A%B8" target="_blank">하이퍼텍스트</a> = 문서와 문서가 연결되있다는 특징
+        <p><img src="Anchor.png" alt="anchor tag ex"></strong>
+        <br>↑링크와 링크를 연결해주는 <strong>Anchor TAG</strong></p>
+        </div>
+
+        <div id = "Attributes">
+        <p><img src="Attributes.png" alt="Html Attributes example">
+        <img src="Attributes2.png" alt="Html Attributes example">
+        <br><strong>TAG 뒤에 붙는 속성</strong>을 적용하여 세부적 기능제어
+        <br><em>EX) id src width height controls</p></em>
+        </div>
+    </ul>
+      <h2><li>HTML성질</li></h2>
+
+
+      <h2><li>HTML시작</li></h2>
+        <div id = HTML start>
+        <em>크게 <strong>DOCTYPE</strong> 설정과 <strong>HEAD</strong>태그 <strong>BODY</strong>태그로 구분</em>
+        <br>
+        <img src="HTML start.png" alt="html start code">
+        <br>
+        <div style = "border:3px solid red">HTML파일의 기본표준타입으로 DOCTYPE설정
+        <br>html은 가장 상위부모태그</div>
+        <div style = "border:3px solid blue">head태그 : 문서의 제목 및 저자 문서의 속성을 담아주는 태그
+        </div>
+        <div style = "border:3px solid yellow">body태그 : 본문해당태그(Visual)
+        </div>
+
+        </div>
 </ol>
-
-
 <h1>Review</h1>
 <div id = "Review">
 <ol>
-  <li>HTML = <strong>HyperTextMarkup Language</strong> → 웹사이트 제작에 최적화 HTML + JavaScript or CSS </li>
+  <li>HTML = <strong>HyperTextMarkup Language</strong> → 웹사이트 제작시 사용 HTML + JavaScript or CSS </li>
   <li>대부분 HTML elements는 <strong>opening tags</strong>와 <strong>closing tags</strong>로 이루어져있다 → 사이엔 raw text나 다른 HTML tag를 담는다.</li>
   <li>HTML은 <strong>상속</strong>의 특성을 가지고 있다 외부tag = 부모tag / 내부tag = 자식tag → 자식은 부모의 특성을 상속받는다.</li>
   <li>눈에 보이는 대부분 element는 <strong>body</strong> 에 들어가있다 → 문서의 제목,저자를 기록한 문서의 속성은 head태그에 넣는다.</li>
@@ -27,7 +70,7 @@
   <br>alt로 이미지로딩 실패시 대체텍스트 표시설정해주기
   <br><em>video의경우 img와 Attridution이 비슷하지만 닫는Tag가 필요하고 control 속성으로 사용자가 직접조정가능
 </li>
-  
+
 </ol>
 </div>
 </body>
