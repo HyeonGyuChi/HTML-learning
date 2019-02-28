@@ -7,7 +7,6 @@
 
 <body>
 <h1>Introduction to HTML</h1>
-</body>
 
 <ol>
   <h2><li>HTML이란?</li></h2>
@@ -36,7 +35,30 @@
         </div>
     </ul>
       <h2><li>HTML성질</li></h2>
+      <p>자식 TAG는 <strong>부모 TAG의 속성을 상속</strong>받는다.
+        <em>ex) ol과 ul TAG에 따라 li TAG가 달라짐</em></p>
+      <div id = "ordinary list ex">
+      <h3>Ordinary List Tag</h3>
+      <img src="html list(ol).png" alt="ordinary Tag", title="ordinary Tag">
+        <ol>
+          <li>Russia</li>
+          <li>United States</li>
+          <li>Canada</li>
+        </ol>
+      </div>
 
+      <div>
+        <h3>Unordinary List Tag</h3>
+        <img src="html list(ul).png" alt="unordinary Tag", title="unordinary Tag">
+        <div id = "unordinary list ex">
+        <ul>
+          <li>Arctos</li>
+          <li>Collarus</li>
+          <li>Horribilis</li>
+          <li>Nelsoni (extinct)</li>
+        </ul>
+
+      </div>
 
       <h2><li>HTML시작</li></h2>
         <div id = HTML start>
@@ -45,17 +67,18 @@
         <img src="HTML start.png" alt="html start code">
         <br>
         <div style = "border:3px solid red">HTML파일의 기본표준타입으로 DOCTYPE설정
-        <br>html은 가장 상위부모태그</div>
-        <div style = "border:3px solid blue">head태그 : 문서의 제목 및 저자 문서의 속성을 담아주는 태그
+        <br><strong>html태그</strong> : 가장 상위부모태그</div>
+        <div style = "border:3px solid blue"><strong>head태그</strong> : 문서의 제목 및 저자 문서의 속성을 담아주는 태그
         </div>
-        <div style = "border:3px solid yellow">body태그 : 본문해당태그(Visual)
+        <div style = "border:3px solid yellow"><strong>body태그</strong> : 본문해당태그(Visual)
         </div>
 
         </div>
-</ol>
-<h1>Review</h1>
-<div id = "Review">
-<ol>
+    </ol>
+  <h1>Review</h1>
+  <img src="html review.png" alt="codecademy review(HyeonGyu)" title ="Introduction to HTML Review(HyeonGyu's reveiw)">
+  <div id = "Review">
+  <ol>
   <li>HTML = <strong>HyperTextMarkup Language</strong> → 웹사이트 제작시 사용 HTML + JavaScript or CSS </li>
   <li>대부분 HTML elements는 <strong>opening tags</strong>와 <strong>closing tags</strong>로 이루어져있다 → 사이엔 raw text나 다른 HTML tag를 담는다.</li>
   <li>HTML은 <strong>상속</strong>의 특성을 가지고 있다 외부tag = 부모tag / 내부tag = 자식tag → 자식은 부모의 특성을 상속받는다.</li>
@@ -66,13 +89,13 @@
   <li><strong>br</strong>태그 = LineBreak = 다음행으로 넘김</li>
   <li>list는 <strong>ol(=ordinary)과 ul(=unordinary)태그</strong>가 있고, 자식태그로 li를 품는다.</li>
   <li>이미지를 첨부시 <strong>img</strong>태그 비디오 첨부시 <strong>video</strong>태그
-  <br><em>im의 Attrdution으로는 scr와 width height가 있다. (scr = "url") / <strong>닫는Tag필요X</strong>
-  <br>alt로 이미지로딩 실패시 대체텍스트 표시설정해주기
-  <br><em>video의경우 img와 Attridution이 비슷하지만 닫는Tag가 필요하고 control 속성으로 사용자가 직접조정가능
-</li>
+  <br><em>im의 Attrdution으로는 <strong>scr와 width height</strong>가 있다. (scr = "url") / <strong>닫는Tag필요X</strong>
+  <br><strong>alt</strong>로 이미지로딩 실패시 대체텍스트 표시설정해주기
+  <br><em>video의경우 img와 Attridution이 비슷하지만 <strong>닫는Tag</strong>가 필요하고 <strong>control</strong> 속성으로 사용자가 직접조정가능
+  </li>
 
-</ol>
-</div>
+  </ol>
+  </div>
 </body>
 
 
