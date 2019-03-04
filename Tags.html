@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tags</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+  <nav><strong>
+     <a href="./Index.html">HOME</a>
+     <a href="./Introduction to HTML.html">Introduction</a>
+     <a href="./Tags.html">Tags</a>
+    </strong>
+   </nav>
+
+<h1>Tags</h1>
+
+
+<div id = TAG index>
+  <ul>
+    <li> <a href = "#p TAG"> <strong>p</strong></a> </li>
+    <li> <a href = "#br TAG"> <strong>br</strong></a> </li>
+    <li> <a href = "#img TAG"> <strong>img</strong></a> </li>
+    <li> <a href = "#video TAG"> <strong>video</strong></a> </li>
+    <li> <a href = "#table TAG"> <strong>table</strong></a> </li>
+    <li> <a href = "#form1 TAG"> <strong>form(1)</strong></a> </li>
+    <li> <a href = "#form2 TAG"> <strong>form(2)</strong></a> </li>
+
+  </ul>
+</div>
+
+<ul>
+  <div id = "p TAG">
+  <h2><li> p태그 </li></h2>
+  <p>Paragraph = 문단작성시 사용</p>
+  <p>사용시 밑에 줄 한칸을 띈다.</p>
+  </div>
+
+  <div id = "br TAG">
+  <h2><li> br태그 </li></h2>
+  <p>Line Break = 줄바꿈을 한다</p>
+  <p>같은단락 enter시에 사용 / 다른단락일경우 "p"태그사용 권장
+  </div>
+
+  <div id = "img TAG">
+  <h2><li> img태그 </li></h2>
+  <p>image = 이미지 첨부</p>
+
+  <img src="html img.png" alt="html img ex">
+
+  <p><h5>속성</br>
+    src = 이미지소스</br>
+    height width = 높이 폭 // 높이나 폭 하나만 설정시 자동비율</br>
+    alt = 이미지 로드 실패시 alternative text 표시</br>
+    title = 이미지이름설정</br>
+    cf) self-closing tags
+    </h5>
+  </p>
+  </div>
+  <div id = "video TAG">
+  <h2><li> video태그 </li></h2>
+  <p>video = 비디오 첨부</p>
+
+  <img src="html video.png" alt="html video ex">
+  <p><h5>속성</br>
+    src = 비디오소스</br>
+    height width = 높이 폭 // 높이나 폭 하나만 설정시 자동비율</br>
+    controls = 사용자가 직접 동영상 컨트롤 가능
+    </h5>
+  </div>
+
+
+  <div id = "table TAG">
+  <h2><li> table태그 </li></h2>
+  <p> table = 표 삽입</p>
+  <table border = "2">
+    <thead>
+      <tr>
+        <th>이름</th> <th>나이</th> <th>학교</th> <th>회비</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>홍길동</td> <td rowspan = "2">23</td>  <td>강원대학교</td>  <td>1200</td>
+      </tr>
+      <tr>
+        <td>김수한</td>  <td>한림대학교</td>  <td>800</td>
+      </tr>
+    </tbody>
+    <tfood>
+      <tr>
+        <td colspan="3"> 합계 </td> <td>2000</td>
+      </tr>
+    </tfood>
+  </table>
+  <br> <img src="html table.png" alt="html table ex">
+  <p><h5>자식태그</br>
+    td = 표데이터 → th = 진하게표시</br>
+    tr = 표 행</br>
+    thead = 표 머리</br>
+    thead = 표 내용</br>
+    tfood = 표 발</br>
+    thead tbody tfoot로 위치표현 가능
+    </h5>
+
+  <p><h5>표 병합</br>
+    td rowspan = "?" : ?칸만큼 행을 합침
+    td colspan = "?" : ?칸만큼 열을 합침
+    </h5>
+
+  </div>
+
+  <div id = "form1 TAG">
+  <h2><li> form태그(1) </li></h2>
+  <p>사용자로부터 입력받은 정보를 어디로 보낼것인가?</p>
+  <form action="http://localhost/login.php">
+    <p>아이디 : <input type ="text" name ="id"></p>
+    <p>비밀번호 : <input type ="password" name ="pwd"></p>
+    <input type="submit">
+  </form>
+
+  <br><img src="html form(1).png" alt="html form(1) ex">
+  <br><img src="web sending.png" alt="web sending ex">
+  <p><h4>↑ localhost/login.php로 입력받은 데이터인 id = Hello pwd = html 을 보냄 </h4></p>
+  <p><h5>input 태그 : 사용자로부터 정보를 입력받기 위해사용</br>
+    input type = "?" : ?에따라 사용자로부터 입력받는 종류지정</br>
+    text = 글자</br>
+    password = 입력된 글자 *표시, 글자수 파악가능</br>
+    submit = 입력된 데이터를 서버로 보내기위한 버튼생성</br>
+
+  <p><h5>form 기본속성</br>
+    action = "http://~" : 입력한 데이터정보를 http://~로 보냄</br>
+    name = 컨트롤의 이름을 정해줌 → 서버에 알맞은 데이터 정보를 전송하기위해 지정</br>
+
+  </div>
+
+
+
+
+  <div id = "form2 TAG">
+  <h2><li> form태그(2) </li></h2>
+  <p></p>
+
+  <form action="http://localhost/login.php">
+    <p>아이디 : <input type ="text" name ="id" value = "default value"></p>
+    <p>비밀번호 : <input type ="password" name ="pwd"></p>
+    <p>textarea :
+      <textarea cols = "30" rows = "5">기본문자입니다.</textarea>
+    </p>
+    <input type="submit">
+  </form>
+
+  <br><img src="html form(2).png" alt="html form(2) ex">
+
+  <p><h5>form 속성</br>
+    value = 기본적으로 적혀있는 text 설정</br>
+  </p>
+
+  <p>textarea 태그 : 여러줄 입력가능한 TextBox</br>
+    cols = "?" : 문자의 입력가능한 열수지정</br>
+    rows = "?" : 문자의 입력가능한 줄수지정</br>
+    form의 value = textarea의 content에 입력
+    </h5>
+  </p>
+
+
+  </div>
+
+  <div id = "? TAG">
+  <h2><li> ? 태그 </li></h2>
+  <p></p>
+
+  <p><h5>속성</br>
+    </h5></p>
+
+
+  </div>
+
+
+
+</ul>
+
+
+
+</body>
+</html>

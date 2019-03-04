@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Introduction to HTML by HyeonGyu</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+  <nav>
+     <a href="./Index.html">HOME</a>
+     <a href="./Introduction to HTML.html">Introduction</a>
+     <a href="./Tags.html">Tags</a>
+   </nav>
+
+<h1>Introduction to HTML</h1>
+
+<ol>
+  <h2><li>HTML이란?</li></h2>
+    <p>하이퍼텍스트를 가장 중요한 특징으로 하는 마크업형식을 가진 컴퓨터 프로그래밍 언어</p>
+
+  <h2><li>HTML기본문법 및 구조</li></h2>
+    <ul>
+      <h3><li>TAG</li></h3>
+        <img src="html anatomy.PNG" alt="HTML Anatomy">
+        <br>HTML의 기본구조는 content(raw text)를 시작태그와 닫히는태그로 감싸여져 있다.
+        <br><em>※ 몇몇 태그는 닫히는태그가 없다 =
+        <a href="https://discuss.codecademy.com/t/why-are-some-tags-self-closing-but-others-are-not/300323" target="_blank"><strong>Self-Closing</a> ex) img br 등</strong></em>
+      <h3><li>하이퍼텍스트와 Attributes(속성)</li></h2>
+        <div id = "HyperText">
+        HTML의 가장큰 특징 →
+        <strong><a href = "https://namu.wiki/w/%ED%95%98%EC%9D%B4%ED%8D%BC%ED%85%8D%EC%8A%A4%ED%8A%B8" target="_blank">하이퍼텍스트</a> = 문서와 문서가 연결되있다는 특징
+        <p><img src="Anchor.png" alt="anchor tag ex"></strong>
+        <br>↑링크와 링크를 연결해주는 <strong>Anchor TAG</strong></p>
+        </div>
+
+        <div id = "Attributes">
+        <p><img src="Attributes.png" alt="Html Attributes example">
+        <img src="Attributes2.png" alt="Html Attributes example">
+        <br><strong>TAG 뒤에 붙는 속성</strong>을 적용하여 세부적 기능제어
+        <br><em>EX) id src width height controls</p></em>
+        </div>
+    </ul>
+      <h2><li>HTML성질</li></h2>
+      <p>자식 TAG는 <strong>부모 TAG의 속성을 상속</strong>받는다.
+        <em>ex) ol과 ul TAG에 따라 li TAG가 달라짐</em></p>
+      <div id = "ordinary list ex">
+      <h3>Ordinary List Tag</h3>
+      <img src="html list(ol).png" alt="ordinary Tag", title="ordinary Tag">
+        <ol>
+          <li>Russia</li>
+          <li>United States</li>
+          <li>Canada</li>
+        </ol>
+      </div>
+
+      <div>
+        <h3>Unordinary List Tag</h3>
+        <img src="html list(ul).png" alt="unordinary Tag", title="unordinary Tag">
+        <div id = "unordinary list ex">
+        <ul>
+          <li>Arctos</li>
+          <li>Collarus</li>
+          <li>Horribilis</li>
+          <li>Nelsoni (extinct)</li>
+        </ul>
+
+      </div>
+
+      <h2><li>HTML시작</li></h2>
+        <div id = HTML start>
+        <em>크게 <strong>DOCTYPE</strong> 설정과 <strong>HEAD</strong>태그 <strong>BODY</strong>태그로 구분</em>
+        <br>
+        <img src="HTML start.png" alt="html start code">
+        <br>
+        <div style = "border:3px solid red">HTML파일의 기본표준타입으로 DOCTYPE설정
+        <br><strong>html태그</strong> : 가장 상위부모태그</div>
+        <div style = "border:3px solid blue"><strong>head태그</strong> : 문서의 제목 및 저자 문서의 속성을 담아주는 태그
+        </div>
+        <div style = "border:3px solid yellow"><strong>body태그</strong> : 본문해당태그(Visual)
+        </div>
+
+        </div>
+    </ol>
+  <h1>Review</h1>
+  <img src="html review.png" alt="codecademy review(HyeonGyu)" title ="Introduction to HTML Review(HyeonGyu's reveiw)">
+  <div id = "Review">
+  <ol>
+  <li>HTML = <strong>HyperTextMarkup Language</strong> → 웹사이트 제작시 사용 HTML + JavaScript or CSS </li>
+  <li>대부분 HTML elements는 <strong>opening tags</strong>와 <strong>closing tags</strong>로 이루어져있다 → 사이엔 raw text나 다른 HTML tag를 담는다.</li>
+  <li>HTML은 <strong>상속</strong>의 특성을 가지고 있다 외부tag = 부모tag / 내부tag = 자식tag → 자식은 부모의 특성을 상속받는다.</li>
+  <li>눈에 보이는 대부분 element는 <strong>body</strong> 에 들어가있다 → 문서의 제목,저자를 기록한 문서의 속성은 head태그에 넣는다.</li>
+  <li><strong>p span div</strong> 태그는 글자를 블록화 시켜준다.</li>
+  <li><strong>h1~h6</strong>를 사용하여 heading <em>(h 뒤의 숫자가 커질수록 소제목)</em>
+  <li><em>em</em>과 <strong>strong</strong>을 사용하여 강조표현
+  <li><strong>br</strong>태그 = LineBreak = 다음행으로 넘김</li>
+  <li>list는 <strong>ol(=ordinary)과 ul(=unordinary)태그</strong>가 있고, 자식태그로 li를 품는다.</li>
+  <li>이미지를 첨부시 <strong>img</strong>태그 비디오 첨부시 <strong>video</strong>태그
+  <br><em>im의 Attrdution으로는 <strong>scr와 width height</strong>가 있다. (scr = "url") / <strong>닫는Tag필요X</strong>
+  <br><strong>alt</strong>로 이미지로딩 실패시 대체텍스트 표시설정해주기
+  <br><em>video의경우 img와 Attridution이 비슷하지만 <strong>닫는Tag</strong>가 필요하고 <strong>control</strong> 속성으로 사용자가 직접조정가능
+  </li>
+
+  </ol>
+  </div>
+</body>
+
+
+</html>
