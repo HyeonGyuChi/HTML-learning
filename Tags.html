@@ -8,10 +8,12 @@
 <body>
 
   <nav><strong>
-     <a href="./Index.html">HOME</a>
-     <a href="./Introduction to HTML.html">Introduction</a>
-     <a href="./Tags.html">Tags</a>
-     <a href ="./Form.html">Form</a>
+    <a href="./Cover.html">HOME</a>
+    <a href="./Introduction to HTML.html">Introduction</a>
+    <a href="./Tags.html">Tags</a>
+    <a href ="./Form.html">Form</a>
+    <a href ="./Semantic.html">Semantic</a>
+    <a href ="./SearchEngine.html">SearchEngine </a>
     </strong>
    </nav>
 
@@ -25,88 +27,111 @@
     <li> <a href = "#img TAG"> <strong>img</strong></a> </li>
     <li> <a href = "#video TAG"> <strong>video</strong></a> </li>
     <li> <a href = "#table TAG"> <strong>table</strong></a> </li>
+    <li> <a href = "#font TAG"> <strong>font</strong></a> </li>
+
 
   </ul>
 </div>
 
 <ul>
   <div id = "p TAG">
-  <h2><li> p태그 </li></h2>
-  <p>Paragraph = 문단작성시 사용</p>
-  <p>사용시 밑에 줄 한칸을 띈다.</p>
+    <h2><li> p태그 </li></h2>
+    <p>Paragraph = 문단작성시 사용</p>
+    <p>사용시 밑에 줄 한칸을 띈다.</p>
   </div>
+
 
   <div id = "br TAG">
-  <h2><li> br태그 </li></h2>
-  <p>Line Break = 줄바꿈을 한다</p>
-  <p>같은단락 enter시에 사용 / 다른단락일경우 "p"태그사용 권장
+    <h2><li> br태그 </li></h2>
+    <p>Line Break = 줄바꿈을 한다</p>
+    <p>같은단락 enter시에 사용 / 다른단락일경우 "p"태그사용 권장
   </div>
+
 
   <div id = "img TAG">
-  <h2><li> img태그 </li></h2>
-  <p>image = 이미지 첨부</p>
+    <h2><li> img태그 </li></h2>
+    <p>image = 이미지 첨부</p>
 
-  <img src="html img.png" alt="html img ex">
+    <img src="./Picture/html img.png" alt="html img ex">
 
-  <p><h5>속성</br>
-    src = 이미지소스</br>
-    height width = 높이 폭 // 높이나 폭 하나만 설정시 자동비율</br>
-    alt = 이미지 로드 실패시 alternative text 표시</br>
-    title = 이미지이름설정</br>
-    cf) self-closing tags
-    </h5>
-  </p>
+    <p><h5>속성</br>
+      src = 이미지소스</br>
+      height width = 높이 폭 // 높이나 폭 하나만 설정시 자동비율</br>
+      alt = 이미지 로드 실패시 alternative text 표시</br>
+      title = 이미지이름설정</br>
+      cf) self-closing tags
+      </h5>
+    </p>
   </div>
-  <div id = "video TAG">
-  <h2><li> video태그 </li></h2>
-  <p>video = 비디오 첨부</p>
 
-  <img src="html video.png" alt="html video ex">
-  <p><h5>속성</br>
-    src = 비디오소스</br>
-    height width = 높이 폭 // 높이나 폭 하나만 설정시 자동비율</br>
-    controls = 사용자가 직접 동영상 컨트롤 가능
-    </h5>
+
+  <div id = "video TAG">
+    <h2><li> video태그 </li></h2>
+    <p>video = 비디오 첨부</p>
+
+    <img src="./Picture/html video.png" alt="html video ex">
+    <p><h5>속성</br>
+      src = 비디오소스</br>
+      height width = 높이 폭 // 높이나 폭 하나만 설정시 자동비율</br>
+      controls = 사용자가 직접 동영상 컨트롤 가능
+      </h5>
   </div>
 
 
   <div id = "table TAG">
-  <h2><li> table태그 </li></h2>
-  <p> table = 표 삽입</p>
-  <table border = "2">
-    <thead>
-      <tr>
-        <th>이름</th> <th>나이</th> <th>학교</th> <th>회비</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>홍길동</td> <td rowspan = "2">23</td>  <td>강원대학교</td>  <td>1200</td>
-      </tr>
-      <tr>
-        <td>김수한</td>  <td>한림대학교</td>  <td>800</td>
-      </tr>
-    </tbody>
-    <tfood>
-      <tr>
-        <td colspan="3"> 합계 </td> <td>2000</td>
-      </tr>
-    </tfood>
-  </table>
-  <br> <img src="html table.png" alt="html table ex">
-  <p><h5>자식태그</br>
-    td = 표데이터 → th = 진하게표시</br>
-    tr = 표 행</br>
-    thead = 표 머리</br>
-    thead = 표 내용</br>
-    tfood = 표 발</br>
-    thead tbody tfoot로 위치표현 가능
-    </h5>
+    <h2><li> table태그 </li></h2>
+    <p> table = 표 삽입</p>
+    <table border = "2">
+      <thead>
+        <tr>
+          <th>이름</th> <th>나이</th> <th>학교</th> <th>회비</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>홍길동</td> <td rowspan = "2">23</td>  <td>강원대학교</td>  <td>1200</td>
+        </tr>
+        <tr>
+          <td>김수한</td>  <td>한림대학교</td>  <td>800</td>
+        </tr>
+      </tbody>
+      <tfood>
+        <tr>
+          <td colspan="3"> 합계 </td> <td>2000</td>
+        </tr>
+      </tfood>
+    </table>
+    <br> <img src="./Picture/html table.png" alt="html table ex">
+    <p><h5>자식태그</br>
+      td = 표데이터 → th = 진하게표시</br>
+      tr = 표 행</br>
+      thead = 표 머리</br>
+      thead = 표 내용</br>
+      tfood = 표 발</br>
+      thead tbody tfoot로 위치표현 가능
+      </h5>
 
-  <p><h5>표 병합</br>
-    td rowspan = "?" : ?칸만큼 행을 합침
-    td colspan = "?" : ?칸만큼 열을 합침
-    </h5>
+    <p><h5>표 병합</br>
+      td rowspan = "?" : ?칸만큼 행을 합침
+      td colspan = "?" : ?칸만큼 열을 합침
+      </h5>
+  </div>
+
+
+  <div id = "font TAG">
+    <h2><li> Font </li></h2>
+    <img src="./Picture/font.png" alt=" font ex ">
+    <p> 글자의 속성 <font size = "2" color = "blue">글자를 꾸미기위해 무분별한 사용으로 다른태그들과 혼동 > font태그 퇴출 -> CSS 언어고안</font></p>
+      <font size ="7" color = "red">Hello</font> world <!--기본값 : 3 / size = 1~7 -->
+
+
+    <div>
+      <p><h5>속성</br>
+      size = 글자의 크기 : 1~7까지 기본값 3</br>
+      color = 색상</br>
+      <em><font size = "4" color = "red"> ★ font태그 퇴출 : html은 정보로서 중요 / 디자인적인부분은 CSS </font></em></br>
+      </h5></p>
+    </div>
   </div>
 
 </ul>
