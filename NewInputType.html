@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NewInputType</title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+
+      <nav><strong>
+        <a href="./Cover.html">HOME</a>
+        <a href="./Introduction to HTML.html">Introduction</a>
+        <a href="./Tags.html">Tags</a>
+        <a href ="./Form.html">Form</a>
+        <a href ="./Semantic.html">Semantic</a>
+        <a href ="./SearchEngine.html">SearchEngine</a>
+        <a href ="./NewInputType.html">NewInputType</a>
+       </strong></nav>
+
+      <head>
+        <h1>New Input Type</h1>
+      </head>
+
+      <nav id = "index">
+        <ul>
+          <li> <a href = "#newInput"> <strong>New Input Type</strong></a> </li>
+          <li> <a href = "#validation"> <strong>Valitation</strong></a> </li>
+        </ul>
+      </nav>
+
+      <article>
+        <ul>
+
+          <div id = "newInput">
+            <!-- <img src="./이미지이름.png" alt=" ? "> -->
+            <h2><li> HTML5의 New Input Type </li></h2>
+            <p>HTML5에서 추가된 새로운 input type </p>
+            <p>email url number tel등 모바일에서 선택시 키보드 자동으로 바뀜 </p>
+            <img src="./Picture/NewInputType.png" alt="NewInputType ex">
+              <form action = "form.php">
+                <input type="number" name = "numberv" min = "10" max = "40" step="3">
+                <input type="date" name = "datev">
+                <input type="month" name ="monthv">
+                <input type="week" name ="timev">
+                <input type="time" name = "timev">
+                <<input type="email" name = "emailv">
+                <input type="search" name ="searchv">
+                <input type="tel" name = "telv">
+                <input type="range" name = "rangev" min = "0" max = "10">
+                <input type="submit">
+              </form>
+            <div>
+              <p><h5>속성</br>
+              <a = href="https://opentutorials.org/module/1892/11038" target="_blank">참고링크</a></br>
+              </h5></p>
+            </div>
+          </div>
+
+
+          <div id = "validation">
+            <h2><li> Validation </li></h2>
+            <p> 입력값을 미리체크 할 수 있는 규제사항 추가 / 하지만 보안x 신뢰x / 보낸 데이터를 서버에서 처리하게 해야 함 </p>
+              <img src="./Picture/validation.png" alt="validation ex">
+              <form action="register.php">
+                <input type="text" name = "id" placeholder ="아이디를 입력해주세요" required>
+                <!-- required 를 설정해 반드시 입력되야 한다는 규제사항 추가-->
+                <input type="email" name = "email" placeholder = "이메일 입력">
+                <!--type으로 email url number 등 입력된 값을 미리 체크-->
+                <input type="url" name="url">
+                <input type="text" name = "" placeholder = "required pattern예시" required pattern="[a-zA-Z].+[0-9]">
+                <!--required pattern(정규표현식) 으로 세부적인 규제사항 추가 []-->
+                <!--[a-zA-Z]이 구간의 영어 1글자 . : 문자제한없음 + : 하나이상 와야한다 [0-9] : 가장 끝 숫자-->
+                <!-- 즉 첫글자는 영어, 다음글자부터 계속 문자제한없음, 마지막글자는 숫자 -->
+                <input type="submit">
+              </form>
+
+            <div>
+              <p><h5>속성</br>
+              input = type : email, text, url 등 사용자가 입력한 정보를 미리 규제할 수 있다. </br>
+              required : 무조건 입력 </br>
+              required pattern: <a href="https://opentutorials.org/course/909/5142" target="_blank"> 정규표현식 </a>  </br>
+              </h5></p>
+            </div>
+          </div>
+
+
+        </ul>
+      </article>
+
+  </body>
+</html>
+
+
+<div id = " ? ">
+  <!-- <img src="./Picture/이미지이름.png" alt=" ? "> -->
+  <h2><li> <!--제목--> </li></h2>
+  <p><!--설명--></p>
+    <!--코드내용-->
+
+  <div>
+    <p><h5>속성</br>
+    <!--속성내용--></br>
+    </h5></p>
+  </div>
+</div>
